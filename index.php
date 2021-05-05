@@ -1,5 +1,7 @@
 <?php 
     include __DIR__ . "/api.php";
+
+    // var_dump($albums);
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +24,7 @@
       <div class="wrapper">
         <?php foreach ( $albums as $album ) { ?>
             <div class="card">
-                <img src="<?php echo $album["poster"] ?>" alt="<?php echo $album["title"]; ?>">
+                <img src="<?php echo $album['poster'] ?>" alt="<?php echo $album["title"]; ?>">
                 <h2>
                     <?php echo $album["title"]; ?>
                 </h2>
