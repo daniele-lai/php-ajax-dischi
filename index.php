@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>Php Dischi</title>
 </head>
 <body>
     <header>
@@ -20,13 +20,6 @@
     </header>
     <div class="container">
       <div class="wrapper">
-        <!-- <div v-if="changeGenre == album.genre || changeGenre == ''" class="card" v-for="album in albums">
-          <img :src="album.poster" alt="album.title">
-          <h2>{{album.title}}</h2>
-          <h3>{{album.author}}</h3>
-          <span>{{album.genre}}</span>
-          <span>{{album.year}}</span>
-        </div> -->
         <?php foreach ( $albums as $album ) { ?>
             <div class="card">
                 <img src="<?php echo $album["poster"] ?>" alt="<?php echo $album["title"]; ?>">
